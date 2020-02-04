@@ -22,6 +22,7 @@ const GetFortuneHandler = {
   },
 };
 
+/*
 const GetFortuneForIntent = {
   canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
@@ -42,6 +43,7 @@ const GetFortuneForIntent = {
        .getResponse();
   },
 };
+*/
 
 const HelpHandler = {
   canHandle(handlerInput) {
