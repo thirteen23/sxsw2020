@@ -129,7 +129,7 @@ exports.handler = skillBuilder
     ExitHandler,
     FallbackHandler,
     SessionEndedRequestHandler,
-    GetFortuneForIntent,
+    //GetFortuneForIntent,
   )
   .addErrorHandlers(ErrorHandler)
   .lambda();
