@@ -1,0 +1,126 @@
+[
+  {
+    "display_name": null,
+    "name_variants": null,
+    "activity": ["baking cookies", "eating dessert"],
+    "food": ["cookies", "ice cream", "corn on the cob", "pretzels"],
+    "restaurant": [
+      "Cooper’s Old Time Pit Bar-B-Que",
+      "Franklin Barbecue",
+      "24 Diner",
+      "Jo’s",
+      "Voodoo Donuts",
+      "Casino El Camino",
+      "Hut’s Hamburgers",
+      "P. Terry’s",
+      "Max’s Wine Dive",
+      "Justine’s",
+      "Joe’s Bakery",
+      "Turf N’ Surf",
+      "Veracruz All-Natural",
+      "JuiceLand",
+      "Counter Culture"
+    ],
+    "place": [
+      "Capital Factory",
+      "Pennybacker Bridge",
+      "Barton Springs",
+      "The Driskill",
+      "6th Street",
+      "Austin, TX",
+      "Round Rock"
+    ],
+    "friend": ["Joe", "Pam", "Chris", "Tom", "George"],
+    "family": ["Mom", "Dad"]
+  },
+  {
+    "display_name": "Marc",
+    "name_variants": ["Marc", "Mark"],
+    "activity": [
+      "play with your kids",
+      "play rocket league",
+      "play pool",
+      "eat out",
+      "fish",
+      "drink booze",
+      "play soccer",
+      "play mario",
+      "walk the dog",
+      "cat nip the cat"
+    ],
+    "food": ["bad pizza", "eating", "pizza", "funyuns", "curry"],
+    "restaurant": [
+      "P. Terrys",
+      "600 Degrees Pizza",
+      "Swift's Attic",
+      "Round Rock Donuts",
+      "The Onion",
+      "DFG Noodles",
+      "Hat Creek",
+      "Blacks BBQ"
+    ],
+    "place": ["work", "home", "the library"],
+    "friend": ["Max", "Tom", "Chris", "Vanessa", "Justin", "Robbie"],
+    "family": ["Mom", "Dad", "Chris", "Allister", "Murdoc"]
+  },
+  {
+    "display_name": "Tom",
+    "name_variants": ["Tom", "Thomas"],
+    "activity": [
+      "play drums",
+      "play with your kids",
+      "play video games",
+      "watch a band",
+      "play pool",
+      "swim",
+      "snorkel",
+      "eat out",
+      "wax poetic",
+      "fish",
+      "ski",
+      "drink booze"
+    ],
+    "food": ["bad pizza", "eating", "pizza", "funyuns"],
+    "restaurant": ["P. Terrys", "Swift's Attic", "Voodoo Donuts", "The Onion"],
+    "place": [
+      "Wimberly Texas",
+      "Lockhart Texas",
+      "Athens Georgia",
+      "New York City",
+      "San Francisco",
+      "Portland Oregon"
+    ],
+    "friend": [
+      "Chloe",
+      "Felix",
+      "Cory",
+      "<phoneme alphabet='ipa' ph='leɪ.ni'>Lani</phoneme>",
+      "Doug",
+      "Gerber",
+      "Wheaton",
+      "Stephanie",
+      "Karel",
+      "Jeff",
+      "Max",
+      "Marc"
+    ],
+    "family": ["Mom", "Dad"]
+  },
+  {
+    "display_name": "Morgan",
+    "name_variants": ["Gerber", "Morgan"],
+    "activity": [
+      "dodgeball",
+      "snowshoe",
+      "play soccer",
+      "drink",
+      "garden",
+      "painting dogs"
+    ],
+    "food": ["pizza", "chex-mix", "domino's"],
+    "restaurant": ["Casino El Camino", "Clark's", "Portillo's"],
+    "place": ["work", "home", "the big apple", "the river"],
+    "friend": ["Stephanie", "Morgan", "Jeremy", "Savannah", "Cameron"],
+    "family": ["Mom", "Dad"]
+  }
+]
