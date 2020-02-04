@@ -136,6 +136,7 @@ exports.handler = skillBuilder
   .lambda();
  
 /*
+
  function findPerson(name) {
      for(const index in people) {
         const person = people[index]
@@ -171,4 +172,5 @@ exports.handler = skillBuilder
  function getFromArray(array) {
      return array[Math.floor(Math.random() * array.length)]
  }
+ 
  */
