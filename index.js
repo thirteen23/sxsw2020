@@ -100,19 +100,22 @@ const SessionEndedRequestHandler = {
   },
 };
 
+// Generic error handling to capture any syntax or routing errors. If you receive an error
+// stating the request handler chain is not found, you have not implemented a handler for
+// the intent being invoked or included it in the skill builder below.
 const ErrorHandler = {
-  canHandle() {
-    return true;
-  },
-  handle(handlerInput, error) {
-    console.log(`Error handled: ${error.message}`);
-    console.log(`Error stack: ${error.stack}`);
-    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-    return handlerInput.responseBuilder
-      .speak(error.message)
-      .reprompt(error.message)
-      .getResponse();
-  },
+    canHandle() {
+        return true;
+    },
+    handle(handlerInput, error) {
+        console.log(`~~~~ Error handled: ${error.stack}`);
+        const speakOutput = `Sorry, I had trouble doing what you asked. Please try again.`;
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .reprompt(speakOutput)
+            .getResponse();
+    }
 };
 
 const skillBuilder = Alexa.SkillBuilders.custom();
@@ -126,9 +129,9 @@ exports.handler = skillBuilder
     GetFortuneForIntent,
   )
   .addErrorHandlers(ErrorHandler)
-  .withCustomUserAgent('vandehey/fortune/v2')
   .lambda();
-  
+ 
+/*
  function findPerson(name) {
      for(const index in people) {
         const person = people[index]
@@ -164,3 +167,4 @@ exports.handler = skillBuilder
  function getFromArray(array) {
      return array[Math.floor(Math.random() * array.length)]
  }
+ */
