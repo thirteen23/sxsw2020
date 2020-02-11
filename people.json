@@ -1,67 +1,85 @@
 [
-  {
+    {
     "display_name": null,
     "name_variants": null,
-    "activity": ["baking cookies", "eating dessert"],
-    "food": ["cookies", "ice cream", "corn on the cob", "pretzels"],
+    "activity": [
+      "hike trails",
+      "watch t.v.",
+      "play games",
+      "ride bikes",
+      "travel",
+      "go to the movies",
+      "hang out with friends",
+      "eat out",
+      "bowl"
+    ],
+    "food": [
+      "pizza",
+      "cheeseburger",
+      "french fries",
+      "ice cream",
+      "queso",
+      "bacon",
+      "taco",
+      "shake",
+      "hot dog",
+      "sushi",
+      "cake",
+      "lasagna",
+      "chicken nuggets",
+      "fried chicken"
+    ],
     "restaurant": [
       "Cooper’s Old Time Pit Bar-B-Que",
       "Franklin Barbecue",
-      "24 Diner",
-      "Jo’s",
-      "Voodoo Donuts",
+      "Gus Fried Chicken",
+      "Din Ho BBQ",
+      "P Terry's",
       "Casino El Camino",
-      "Hut’s Hamburgers",
+      "East Side Kings",
       "P. Terry’s",
-      "Max’s Wine Dive",
+      "Uchi",
       "Justine’s",
       "Joe’s Bakery",
-      "Turf N’ Surf",
+      "Uchiko",
       "Veracruz All-Natural",
-      "JuiceLand",
-      "Counter Culture"
+      "Home Slice"
     ],
     "place": [
-      "Capital Factory",
-      "Pennybacker Bridge",
+      "Ladybird Lake",
       "Barton Springs",
-      "The Driskill",
-      "6th Street",
-      "Austin, TX",
-      "Round Rock"
+      "Lake Travis",
+      "East Side",
+      "South Congress",
+      "Mueller Neighborhood",
+      "Round Rock",
+      "Cedar Park",
+      "Wimberly",
+      "Johnson City",
+      "Lockhart",
+      "Elgin"
     ],
-    "friend": ["Joe", "Pam", "Chris", "Tom", "George"],
-    "family": ["Mom", "Dad"]
-  },
-  {
-    "display_name": "Marc",
-    "name_variants": ["Marc", "Mark"],
-    "activity": [
-      "play with your kids",
-      "play rocket league",
-      "play pool",
-      "eat out",
-      "fish",
-      "drink booze",
-      "play soccer",
-      "play mario",
-      "walk the dog",
-      "cat nip the cat"
+    "friend": [
+      "Willie Nelson",
+      "Robert Earl Keen",
+      "Guy Clark",
+      "Billy Joe Shaver",
+      "Buddy Holly",
+      "Salena",
+      "Stevie Ray Vaughan",
+      "George Strait",
+      "Erykah Badu",
+      "Natalie Maines",
+      "Roy Orbison",
+      "Roky Erickson",
+      "Daniel Johnston"
     ],
-    "food": ["bad pizza", "eating", "pizza", "funyuns", "curry"],
-    "restaurant": [
-      "P. Terrys",
-      "600 Degrees Pizza",
-      "Swift's Attic",
-      "Round Rock Donuts",
-      "The Onion",
-      "DFG Noodles",
-      "Hat Creek",
-      "Blacks BBQ"
-    ],
-    "place": ["work", "home", "the library"],
-    "friend": ["Max", "Tom", "Chris", "Vanessa", "Justin", "Robbie"],
-    "family": ["Mom", "Dad", "Chris", "Allister", "Murdoc"]
+    "family": [
+      "dad",
+      "mom",
+      "brother",
+      "sister"
+    ]
   },
   {
     "display_name": "Tom",
