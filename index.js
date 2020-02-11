@@ -162,6 +162,9 @@ exports.handler = skillBuilder
     FallbackHandler,
     SessionEndedRequestHandler,
     //GetFortuneForIntent,
+    //YesHandler,
+    //NoHandler,
+  
   )
   .addErrorHandlers(ErrorHandler)
   .lambda();
