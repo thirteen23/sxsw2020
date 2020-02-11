@@ -47,6 +47,37 @@ const GetFortuneForIntent = {
 
 */
 
+const YesHandler = {
+  canHandle(handlerInput) {
+    const request = handlerInput.requestEnvelope.request;
+    return request.type === 'IntentRequest'
+      && request.intent.name === 'AMAZON.YesIntent';
+  },
+  handle(handlerInput) {
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+    return handlerInput.responseBuilder
+      .speak('Who do you want a fortune for?')
+      .reprompt()
+      .getResponse();
+  },
+};
+
+const NoHandler = {
+  canHandle(handlerInput) {
+    const request = handlerInput.requestEnvelope.request;
+    return request.type === 'IntentRequest'
+      && request.intent.name === 'AMAZON.NoIntent';
+  },
+  handle(handlerInput) {
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+    return handlerInput.responseBuilder
+      .speak('Ok goodbye!')
+      .reprompt()
+      .getResponse();
+  },
+};
+
+
 const HelpHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
