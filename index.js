@@ -2,9 +2,10 @@
 // dependencies
 const Alexa = require('ask-sdk-core');
 
-//const people = require('./people.json')
-//const fortunes = require('./fortunes.json')
+const people = require('./people.json')
+const fortunes = require('./fortunes.json')
 
+//This function will begin the skill by asking who you want a fortune for
 const GetFortuneHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
@@ -22,8 +23,8 @@ const GetFortuneHandler = {
   },
 };
 
-/*
 
+//This function will get the name of the person for generating a fortune
 const GetFortuneForIntent = {
   canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
@@ -45,7 +46,7 @@ const GetFortuneForIntent = {
   },
 };
 
-*/
+
 
 const YesHandler = {
   canHandle(handlerInput) {
@@ -161,15 +162,15 @@ exports.handler = skillBuilder
     ExitHandler,
     FallbackHandler,
     SessionEndedRequestHandler,
-    //GetFortuneForIntent,
-    //YesHandler,
-    //NoHandler,
+    GetFortuneForIntent,
+    YesHandler,
+    NoHandler,
   
   )
   .addErrorHandlers(ErrorHandler)
   .lambda();
  
-/*
+
 
  function findPerson(name) {
      for(const index in people) {
@@ -207,4 +208,4 @@ exports.handler = skillBuilder
      return array[Math.floor(Math.random() * array.length)]
  }
  
- */
+ 
