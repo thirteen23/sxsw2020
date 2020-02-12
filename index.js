@@ -19,7 +19,7 @@ try {
   console.error(err)
 }
 
-
+//This function starts the conversation by asking who you want a fortune for
 const GetFortuneHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
@@ -37,7 +37,7 @@ const GetFortuneHandler = {
   },
 };
 
-
+//This function will get the name for who the fortune is for, and create a fortune!
 const GetFortuneForIntent = {
   canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
