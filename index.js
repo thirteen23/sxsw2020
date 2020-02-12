@@ -2,10 +2,24 @@
 // dependencies
 const Alexa = require('ask-sdk-core');
 
-const people = require('./people.json')
-const fortunes = require('./fortunes.json')
+var people = [];
+var fortunes = []
 
-//This function will begin the skill by asking who you want a fortune for
+const fs = require('fs')
+
+const peopleFile = './people.json';
+const fortunesFile = './fortunes.json'
+
+try {
+  if (fs.existsSync(peopleFile) && fs.existsSync(fortunesFile)) {
+    people = require('./people.json');
+    fortunes = require('./fortunes.json');
+  }
+} catch(err) {
+  console.error(err)
+}
+
+
 const GetFortuneHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
@@ -24,7 +38,6 @@ const GetFortuneHandler = {
 };
 
 
-//This function will get the name of the person for generating a fortune
 const GetFortuneForIntent = {
   canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
@@ -38,15 +51,21 @@ const GetFortuneForIntent = {
     const person = findPerson(name)
     const fortune = getFortuneFor(name, person)
     
-    return handlerInput.responseBuilder
-       .speak('Getting a fortune for ' + name + '...<break time="500ms"/> <amazon:emotion name="excited" intensity="high"> ' 
-       + fortune + '</amazon:emotion> <break time="1000ms"/>' + 'Do you want another fortune?')
-    .reprompt()
-       .getResponse();
+    if (person !== null && fortune !== null) {
+        return handlerInput.responseBuilder
+        .speak('Getting a fortune for ' + name + '...<break time="500ms"/> <amazon:emotion name="excited" intensity="high"> ' 
+        + fortune + '</amazon:emotion> <break time="1000ms"/>' + 'Do you want another fortune?')
+        .reprompt()
+        .getResponse();
+    } else {
+        return handlerInput.responseBuilder
+        .speak('Missing people and fortunes.')
+        .reprompt()
+        .getResponse();
+    }
+    
   },
 };
-
-
 
 const YesHandler = {
   canHandle(handlerInput) {
@@ -77,7 +96,6 @@ const NoHandler = {
       .getResponse();
   },
 };
-
 
 const HelpHandler = {
   canHandle(handlerInput) {
@@ -159,53 +177,59 @@ exports.handler = skillBuilder
   .addRequestHandlers(
     GetFortuneHandler,
     HelpHandler,
+    YesHandler,
+    NoHandler,
     ExitHandler,
     FallbackHandler,
     SessionEndedRequestHandler,
     GetFortuneForIntent,
-    YesHandler,
-    NoHandler,
-  
   )
   .addErrorHandlers(ErrorHandler)
   .lambda();
  
 
-
  function findPerson(name) {
-     for(const index in people) {
-        const person = people[index]
-
-         for (const nameIndex in person["name_variants"]) {
-             const localName = person["name_variants"][nameIndex]
-             
-             if (localName.toLowerCase() === name.toLowerCase()) {
-                 return person
+     if (people.length > 0) {
+         for(const index in people) {
+            const person = people[index]
+    
+             for (const nameIndex in person["name_variants"]) {
+                 const localName = person["name_variants"][nameIndex]
+                 
+                 if (localName.toLowerCase() === name.toLowerCase()) {
+                     return person
+                 }
              }
          }
+         
+        //Return the default person if we fail to match a user
+        return people[0];
+     } else {
+         return null;
      }
-     
-    //Return the default person if we fail to match a user
-    return people[0];
  }
   
  function getFortuneFor(name, person) {
-    let fortune = getFromArray(fortunes)
+     if (fortunes.length > 0) {
+        let fortune = getFromArray(fortunes)
     
-    const nameToUse = person['display_name'] !== null ? person['display_name'] : name;
-     
-    fortune = fortune.replace(/__name__/g, nameToUse);
-    fortune = fortune.replace(/__activity__/g, getFromArray(person['activity']));
-    fortune = fortune.replace(/__food__/g, getFromArray(person['food']));
-    fortune = fortune.replace(/__restaurant__/g, getFromArray(person['restaurant']));
-    fortune = fortune.replace(/__place__/g, getFromArray(person['place'].concat(person['restaurant'])));
-    fortune = fortune.replace(/__friend__/g, getFromArray(person['friend']));
-
-     return fortune
+        const nameToUse = person['display_name'] !== null ? person['display_name'] : name;
+         
+        fortune = fortune.replace(/__name__/g, nameToUse);
+        fortune = fortune.replace(/__activity__/g, getFromArray(person['activity']));
+        fortune = fortune.replace(/__food__/g, getFromArray(person['food']));
+        fortune = fortune.replace(/__restaurant__/g, getFromArray(person['restaurant']));
+        fortune = fortune.replace(/__place__/g, getFromArray(person['place'].concat(person['restaurant'])));
+        fortune = fortune.replace(/__friend__/g, getFromArray(person['friend']));
+    
+         return fortune
+     } else {
+         return null;
+     }
+    
  }
  
  function getFromArray(array) {
      return array[Math.floor(Math.random() * array.length)]
  }
- 
  
