@@ -2,8 +2,8 @@
 // dependencies
 const Alexa = require('ask-sdk-core');
 
-var people = [];
-var fortunes = []
+var people = require('./people.json');
+var fortunes = require('./fortunes.json');
 
 const fs = require('fs')
 
@@ -45,16 +45,15 @@ const GetFortuneForIntent = {
         && request.intent.name === 'GetFortuneForIntent');
   },
   handle(handlerInput) {
-
     const { attributesManager } = handlerInput;
     const name = Alexa.getSlotValue(handlerInput.requestEnvelope, 'name');
-    const person = findPerson(name)
-    const fortune = getFortuneFor(name, person)
+    const person = findPerson(name);
+    const fortune = getFortuneFor(name, person);
     
     if (person !== null && fortune !== null) {
         return handlerInput.responseBuilder
-        .speak('Getting a fortune for ' + name + '...<break time="500ms"/> <amazon:emotion name="excited" intensity="high"> ' 
-        + fortune + '</amazon:emotion> <break time="1000ms"/>' + 'Do you want another fortune?')
+        .speak('Getting a fortune for ' + name + '...<break time="500ms"/> ' 
+        + fortune + ' <break time="1000ms"/>' + 'Do you want another fortune?')
         .reprompt()
         .getResponse();
     } else {
@@ -211,7 +210,7 @@ exports.handler = skillBuilder
   
  function getFortuneFor(name, person) {
      if (fortunes.length > 0) {
-        let fortune = getFromArray(fortunes)
+        let fortune = getFromArray(fortunes);
     
         const nameToUse = person['display_name'] !== null ? person['display_name'] : name;
          
@@ -219,8 +218,9 @@ exports.handler = skillBuilder
         fortune = fortune.replace(/__activity__/g, getFromArray(person['activity']));
         fortune = fortune.replace(/__food__/g, getFromArray(person['food']));
         fortune = fortune.replace(/__restaurant__/g, getFromArray(person['restaurant']));
-        fortune = fortune.replace(/__place__/g, getFromArray(person['place'].concat(person['restaurant'])));
+        fortune = fortune.replace(/__place__/g, getFromArray(person['place']));
         fortune = fortune.replace(/__friend__/g, getFromArray(person['friend']));
+        fortune = fortune.replace(/__family__/g, getFromArray(person['family']));
     
          return fortune
      } else {
@@ -230,6 +230,6 @@ exports.handler = skillBuilder
  }
  
  function getFromArray(array) {
-     return array[Math.floor(Math.random() * array.length)]
+     return array[Math.floor(Math.random() * array.length)];
  }
  
