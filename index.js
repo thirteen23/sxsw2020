@@ -8,7 +8,7 @@ var fortunes = require('./fortunes.json');
 const fs = require('fs')
 
 const peopleFile = './people.json';
-const fortunesFile = './fortunes.json'
+const fortunesFile = './fortunes.json';
 
 try {
   if (fs.existsSync(peopleFile) && fs.existsSync(fortunesFile)) {
@@ -45,6 +45,7 @@ const GetFortuneForIntent = {
         && request.intent.name === 'GetFortuneForIntent');
   },
   handle(handlerInput) {
+    console.log("handlerInput for GetFortuneForIntent.");
     const { attributesManager } = handlerInput;
     const name = Alexa.getSlotValue(handlerInput.requestEnvelope, 'name');
     const person = findPerson(name);
@@ -210,7 +211,9 @@ exports.handler = skillBuilder
   
  function getFortuneFor(name, person) {
      if (fortunes.length > 0) {
+        //let fortune = getFromArray(new Array(fortunes[44]));
         let fortune = getFromArray(fortunes);
+        //console.log("Fortune: " + fortune);
     
         const nameToUse = person['display_name'] !== null ? person['display_name'] : name;
          
