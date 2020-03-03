@@ -1,18 +1,135 @@
 [
-  "__name__, today you should talk to __friend__ about coming along with you tonight to __place__.",
-  "Take __friend__ out to __restaurant__ for some __food__. __friend__ will love you for it.",
-  "Absolutely stay away from __friend__ at __place__ today. Go home and avoid conflict. Maybe __activity__?",
-  "__name__, you should text __friend__ tonight and see if they want to __activity__ with you. Its been way too long.",
-  "Find time at work to talk to __friend__. Maybe take them to lunch? You could try __restaurant__ for __food__. Something tells me they miss hanging out with you, __name__.",
-  "Get out of town immediately. Go to __place__ and take a breather. You could see if __friend__ wants to go with you.",
-  "Today __name__, you should avoid getting __food__ at __restaurant__ today. In fact, just don't ever go to __restaurant__ again. You'll thank me for it later.",
-  "Did something happen between you and __friend__ last week? Maybe invite them to __activity__ to make amends",
-  "It is time to admit to __friend__ that you have feelings beyond a working relationship. I would take __friend__ out for __food__ at __restaurant__ to drop this bomb.",
-  "If you aren't already there, call in sick today for work in order to stay away from __friend__. __friend__ is really mad at you right now for you said about how horrible they are at __activity__.",
-  "__name__, you are giving too much attention to __friend__. Start thinking about other family members for once!",
-  "Take __friend__ out for some __food__ at __restaurant__. Even though it won't go very well, you need this time together.",
-  "Get outside __name__! Go __activity__ outside with __friend__. Maybe go to __restaurant__ and get a drink after.",
-  "The weather is supposed to be perfect this weekend. __name__, go  __activity__ with __friend__. Maybe go to __restaurant__ and pig out on __food__.",
-  "__name__, have you talked to __friend__ about working late nights at work coming up? They may be upset if you aren't home at all to help take care of the kids.",
-  "Sometimes I think you like to __activity__ more than you like __friend__. __friend__ is starting to think it too."
+  "__name__, today you should talk to __friend__ about coming along with you tonight <say-as interpret-as='interjection'>achoo!</say-as><break time='500ms'/> <amazon:effect name='whispered'>Sorry!</amazon:effect><break time='1000ms'/> With you tonight to __place__.",
+
+  "<voice name='Joey'>Take __friend__ out to __restaurant__ or get __food__ as takeout and go __activity__. You will have a <say-as interpret-as='interjection'>blast</say-as> and __friend__ will love you for it.</voice>",
+
+  "<say-as interpret-as='interjection'>Holy smoke!</say-as> Absolutely stay away from __friend__ in __place__ today. Go home and avoid conflict. Maybe __activity__?",
+
+  "__name__, you should text __friend__ tonight and see if they want to __activity__ with you. <amazon:emotion name='disappointed' intensity='low'>Its been way too long.</amazon:emotion>",
+
+  "Find time at work to reach out to __friend__. Maybe take them to lunch? You could try __restaurant__. Or go somewhere that serves __food__. Something tells me they miss hanging out with you, __name__.",
+
+  "<amazon:effect name='whispered'>Get out of town immediately. At the very least, go to __place__ and take a breather. You could see if __friend__ wants to go with you. Just. Get out!</amazon:effect>",
+
+  "Today __name__, you should avoid getting __food__ at any restaurant. Especially at __restaurant__. <amazon:effect name='whispered'>In fact, just don't ever go to __restaurant__ again. You'll thank me for it later.</amazon:effect>",
+
+  "__restaurant__ has a special today you don't want to miss. Take __friend__ with you as soon as possible. You won't regret it.",
+
+  "<amazon:emotion name='excited' intensity='high'>Did something happen between you and __family__ last week? Maybe invite them to __activity__ to make amends. They are your <say-as interpret-as='expletive'>flipping</say-as> family for <say-as interpret-as='expletive'>flips</say-as> sake!</amazon:emotion>",
+
+  "<say-as interpret-as='interjection'>Dude.</say-as> It is time to admit to __friend__ that you have feelings beyond a friendship. I would take __friend__ out to __restaurant__, or somewhere where they serve __food__, to drop this bomb.<say-as interpret-as='interjection'>anyhoo!</say-as>. <say-as interpret-as='interjection'>Totally kidding of course!</say-as><break time='1000ms'/> Or am I?",
+
+  "<voice name='Ivy'>If you aren't already there, call in sick today for work, and stay away from __friend__. __friend__ is really mad at you right now for what you said about them and how they are so bad at __activity__ .</voice>",
+
+  "__name__, you are giving too much attention to __family__. <prosody volume='x-loud'>Start thinking about other family members for once!</prosody>",
+
+  "<say-as interpret-as='interjection'>Bummer!</say-as> <amazon:emotion name='disappointed' intensity='low'>Take __friend__ out for some __food__. Even though it won't go very well, you need this time together.</amazon:emotion>",
+
+  "<prosody volume='x-loud'>Get outside __name__!</prosody> Go __activity__ outside with __friend__. Maybe go to __restaurant__ and get a drink after.",
+
+  "<voice name='Kimberly'>The weather is supposed to be perfect this weekend. __name__, go  __activity__ with __friend__. Maybe go to __restaurant__ and pig out on food. Or just go somewhere else to pig out on __food__.</voice>",
+
+  "<prosody volume='x-loud'>__name__, have you talked to __family__ about working late nights at work coming up? They may be upset if you aren't home at all to help take care of the kids.</prosody>",
+
+  "<amazon:emotion name='disappointed' intensity='low'>Sometimes I think you like to __activity__ more than you like __friend__. __friend__ is starting to think it too.</amazon:emotion>",
+
+  "It’s time to take that trip to __place__ you’ve been dreaming of. Go home to pack and then stop by and say goodbye to __friend__. You won’t be seeing them again any time soon.",
+
+  "It’s time. Pack your bags and get the first ticket to __place__. No time to say goodbye to your favorite restaurant, __restaurant__, and your friend __friend__. They’re closing in on you.",
+
+  "Today’s the day! No more dreaming of unlimited time to __activity__. Head out to __place__ tonight, when the Dark Lord sings. Don’t worry, you’ll be done in time to get something to eat at __restaurant__.",
+
+  "I know you can tell __friend__  hasn’t been acting normal since your trip to __place__. It’s time to grab a shovel and go __activity__. Tell them to meet you at __restaurant__.",
+
+  "You may love sleeping on the bus on your way to __place__, but be careful. Your driver may decide to __activity__ while you doze. Take __friend__ with you the next time you travel to __place__.",
+
+  "Love is in the air tonight! Call up __restaurant__ and make a reservation for 8:43pm sharp. You may just meet your next special someone.",
+
+  "Sometimes, it feels like no one is on your side. Worry no more my friend, because __friend__ is definitely on your side. Everyone else is still a toss-up however, so worry a little.",
+
+  "When you __activity__, don't stop. Never.",
+
+  "You may soon discover an unknown mystical talent. Soon, you’ll be putting on your blue suede shoes to __activity__ all the way to __place__.",
+
+  "Journey once proclaimed, <audio src='https://t23-play.s3.amazonaws.com/audio/dsb_new.mp3' /> Sadly, it might be time for you to stop believing in your ability to __activity__. But don’t worry, this is your time to relax! Try calling up __friend__ and getting some __food__.",
+
+  "You’ve always liked eating __food__, but it might be time to expand your culinary palette. Why don’t you call your good friend __friend__ and head over to __place__ to try some of the local flavors.",
+
+  "It might be time to rethink your wardrobe. Have you tried shopping around __place__? Call up your good friend __friend__ and tell them to meet you there right now. Afterwards, you can go __activity__ in your new threads and enjoy some delicious __food__.",
+
+  "Beware of prime numbers. If the date on the calendar refuses to divide itself by anything other than itself, it’s time to hit the road. Maybe it’s time you finally visited __place__ with your good friend __friend__. You can try out new activities. Maybe go __activity__ and eat some delicious __food__.",
+
+  "I think you are coming down with a case of the ‘I don’t wannas’. Instead of going out with __family__, go eat __food__ with __friend__.",
+
+  "Stop putting off the chance to __activity__ with __friend__. They know you're avoiding them, but all they want is a little __food__, and your company.",
+
+  "Go ahead and __activity__. There's no harm in it. Well, no harm unless your friend, __friend__, is involved.",
+
+  "I know you had a dream about __friend__ last week. It's likely nothing, but you should consider what that means for your plans to __activity__ with __friend__.",
+
+  "Tonight's the night. It's not Beyonce's birthday, but it's the next best thing. Tell your friends, especially __friend__, to __activity__ no more today, and get to __place__ ASAP.",
+
+  "Why go __activity__ with __friend__ when you can eat __food__ with __family__?",
+
+  "Tonight you will be invited to __activity__ at a high stakes gambling event near __place__. Don’t mess this up like __friend__ did.",
+
+  "Your doctor said that you should really start eating more __food__. I bet __restaurant__ has plenty of it, even if they don’t have it on the menu.",
+
+  "__friend__ is going to call you tonight. Convince them to __activity__ or get them out to __place__. <amazon:effect name='whispered'>Trust me, do not take no for an answer __name__!</amazon:effect>",
+
+  "__name__, __name__, __name__. Get your act together. Take a breather. Eat __food__. Forget about doing things such as __activity__ and just dream about __place__.",
+
+  "<audio src='https://t23-play.s3.amazonaws.com/audio/cheersclip.mp3' /> but probably not anywhere near __place__. <amazon:emotion name='disappointed' intensity='low'>Not after last time.</amazon:emotion>",
+
+  "<amazon:emotion name='excited' intensity='high'>Time to start to __activity__ and get ripped. Stop eating all the __food__ in sight, and get moving __name__!</amazon:emotion>",
+
+  "I have a question for you __name__. Do you think that __friend__ wants to __activity__ with you, or maybe they are agreeing to __activity__ because they like you so much.",
+
+  "<say-as interpret-as='interjection'>gadzooks!</say-as> <amazon:emotion name='excited' intensity='high'>Tonight it will be raining fiery __food__ from the skies. Take cover at __place__ immediately.</amazon:emotion>",
+
+  "Is Mercury still in retrograde? Either way, you're running out of luck. Stick close to __friend__ because they know how to __activity__.",
+
+  "Hmm this is highly unusual. My spirits tell me that you have been dreaming a lot about __food__, which typically means that you secretly want to __activity__ instead of work. I suggest that you, __name__, take an Uber to __place__, kiss the first person that makes eye contact, and all will be returned to normal.",
+
+  "__name__, they don't want you to know this, but __friend__ got banned from __restaurant__ last week for throwing __food__ at the maitre’ d. __friend__ can correct this imbalance in the universe by going out to __activity__ with an attractive stranger.",
+
+    "If you eat __food__ today, you’re going to get really sick. Why don’t you go to __restaurant__ with __friend__ and just stare at a menu.",
+  
+  "I’m gonna be honest with you. __friend__ doesn’t want to be around you right now. Last time you went to __place__ with them, they threw up __food__ and got really embarrassed.",
+
+  "Get out of the house, go to __place__, eat some __food__, then call up __family__ to hear some good news!",
+
+  "Listen __name__, you need to be more honest with __friend__. __friend__ no longer believes your excuses for not going to __place__ with them. In fact, you should get some __food__ as takeout, pick  them up, and go to __place__ so you can finally talk about it.",
+
+  "A beautiful, smart, and loving person will be coming into your life. Their name might be __friend__. Go to __restaurant__ and you just might find them there. Ask them if they want to accompany you to __activity__",
+
+  "Remember that embarrassing moment you had at __place__? __friend__ does. And they're thinking about it right now.",
+ 
+  "You'll come into a great deal of wealth very soon. But! Only if you __activity__ with __family__ at __place__ during the next full moon.",
+
+  "I'm seeing someone close to you. Are you missing __family__? Why don't you give them a call and catch up.",
+
+  "Ooo __name__! I'm sensing a secret admirer. __friend__ has been hiding their attraction to you for years. Why don’t you go to __restaurant__ and see where the night takes you?",
+
+  "<amazon:emotion name='excited' intensity='high'>Time for a road trip!</amazon:emotion> Grab __friend__ and head to __place__. Maybe while you’re there, eat some __food__ and __activity__.",
+
+  "<amazon:effect name='whispered'>Don’t look now, but __friend__ is staring at you menacingly from across the room. I just thought you should know.</amazon:effect>",
+
+  "Beware __name__! Your friend, __friend__, might be an enemy in camouflage. You should confront them at __place__ to test their loyalty. Afterward, treat yourself to a __food__ party! You deserve it.",
+
+   "<amazon:emotion name=\"excited\" intensity=\"medium\">Oh no. Oh this is bad, __name__. __friend__ knows exactly what you did to them. Just because it happened at __place__ doesn't mean they don’t know.</amazon:emotion>",
+
+  "<amazon:emotion name='disappointed' intensity='medium'>__name__, you wasting too much of your time when you __activity__. </amazon:emotion>Say 197 Hail Marys, take a long cold shower, and apologize profusely on Twitter. That should clear the decks.",
+
+  "__name__, you need to take a trip to __place__ as soon as possible, that much is certain. If you go there, you are guaranteed to find __friend__ consorting with at least one of the Kardashians. They will be feeding each other __food__ and attempting to __activity__, but not in the way one might expect. <amazon:effect name='whispered'>This fortune is actually quite disturbing. </amazon:effect>I wish __name__ the best of luck, though I’m not sure it will help.",
+  
+  "You’ve had a long hard week. Grab __friend__, turn on some Lizzo, and head out to __place__ and __activity__! <amazon:emotion name=\"excited\" intensity=\"medium\">You don’t need a crown to know that you’re a queen.</amazon:emotion>",
+  
+  "__friend__ has been talking behind your back, __name__, telling everyone that you like to go out and __activity__ with Justin Bieber’s best friend from middle school. Avoid __friend__ for at least a week. Maybe take a nice trip to __place__ or just chill on the couch for a few hours eating __food__. Also, avoid using words with the letter “j”.",
+
+ "I'm not saying somebody's going to die, but am saying you should avoid __family__ the next time they __activity__. Just for good measure.",
+  
+  "Go buy a book on how to __activity__ for dummies. <break time='400ms'/> Next, go to __place__, stand on something tall, and recite the lyrics to Bohemian Rhapsody as loud as you can. Trust me, you’ll thank me.",
+  
+  "Don’t look now, but __friend__ is on to you. <break time='200ms'/>They know what you did. <break time='200ms'/>You should probably avoid them for a while."
 ]
