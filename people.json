@@ -83,7 +83,7 @@
   },
   {
     "display_name": "Tom",
-    "name_variants": ["Tom", "Thomas"],
+    "name_variants": ["Tom", "Thomas", "Tommy"],
     "activity": [
       "play drums",
       "play with your kids",
@@ -98,8 +98,8 @@
       "ski",
       "drink booze"
     ],
-    "food": ["bad pizza", "eating", "pizza", "funyuns"],
-    "restaurant": ["P. Terrys", "Swift's Attic", "Voodoo Donuts", "The Onion"],
+    "food": ["pizza", "burgers", "steak", "tacos", "enchiladas", "soup", "chili", "sushi", "breakfast tacos", "fish", "shrimp", "fajitas", "caramel", "chocolate", "cake"],
+    "restaurant": ["Quality Seafood", "Hanks", "Torchy's Tacos", "The Onion", "Patrizi's", "Uchi"],
     "place": [
       "Wimberly Texas",
       "Lockhart Texas",
@@ -109,8 +109,8 @@
       "Portland Oregon"
     ],
     "friend": [
-      "Chloe",
-      "Felix",
+      "Tyler",
+      "Shawn",
       "Cory",
       "<phoneme alphabet='ipa' ph='leɪ.ni'>Lani</phoneme>",
       "Doug",
@@ -122,7 +122,7 @@
       "Max",
       "Marc"
     ],
-    "family": ["Mom", "Dad"]
+    "family": ["Dad", "Chloe", "Felix", "Danielle", "Susan", "Steve"]
   },
   {
     "display_name": "Morgan",
@@ -139,6 +139,108 @@
     "restaurant": ["Casino El Camino", "Clark's", "Portillo's"],
     "place": ["work", "home", "the big apple", "the river"],
     "friend": ["Stephanie", "Morgan", "Jeremy", "Savannah", "Cameron"],
-    "family": ["Mom", "Dad"]
+    "family": ["Jeremy", "Grandpa Al", "Ginger", "Aunt Petunia", "Second Cousin Sylvia", "Aunt Karen", "Cousin Sid"]
+  },
+  {
+    "display_name": "Marc",
+    "name_variants": ["Marc", "Mark"],
+    "activity": [
+      "play with your kids",
+      "play rocket league",
+      "play pool",
+      "eat out",
+      "fish",
+      "drink booze",
+      "play soccer",
+      "play mario",
+      "walk the dog",
+      "cat nip the cat",
+      "eating",
+      "adding doug quotes to tater",
+      "play ping pong",
+      "pretend to play ping pong",
+      "walk the cat",
+      "play with all the lego",
+      "attempt to do a backflip"
+    ],
+    "food": [
+      "bad pizza", 
+      "pizza", 
+      "funyuns", 
+      "curry", 
+      "pretzels", 
+      "Kind Bars",
+      "chili with beans",
+      "chili without beans",
+      "chili dogs",
+      "BEEF JERKEY",
+      "nothing"
+      ],
+    "restaurant": [
+      "P. Terrys",
+      "600 Degrees Pizza",
+      "Swift's Attic",
+      "Round Rock Donuts",
+      "The Onion",
+      "DFG Noodles",
+      "Hat Creek",
+      "Blacks BBQ",
+      "Coach's Corner",
+      "Stuc's Pizza",
+      "Rock 'n' Grill",
+      "Casino El Camino"
+    ],
+    "place": ["work", "home", "the library"],
+    "friend": ["Max", "Tom", "Chris", "Vanessa", "Justin", "Robbie", "Anne", "Mike"],
+    "family":["Chris", "Dad", "Mom", "Allister", "Murdoc", "Maddie", "Nala", "Koopa", "Spork"]
+  },
+  {
+    "display_name": "Stephanie",
+    "name_variants": ["Stephanie", "Steph"],
+    "activity": [
+      "cook a nice dinner",
+      "plan a trip",
+      "look for a dog to adopt",
+      "hang out with friends",
+      "drink wine",
+      "read a ghost story",
+      "talk about feelings",
+      "make a spreadsheet"
+    ],
+    "food": ["ramen", "salt and vinegar chips", "just butter", "chili cheese frito’s", "green curry"],
+    "restaurant": [
+      "Ramen Tatsu-ya",
+      "Patrizi’s",
+      "Café No Sé",
+      "Home Slice",
+      "Titaya’s",
+      "That Chicken Food Truck"
+    ],
+    "place": ["work", "home", "Dallas"],
+    "friend": ["Morgan", "Tom", "Marc", "Megan", "Amber", "Rhys", "Paige"],
+    "family": ["Mom", "Dad", "Carolyn", "Christine"]
+  },
+  {
+    "display_name": "Doug",
+    "name_variants": ["Doug", "Boss", "Cook"],
+    "activity": [
+      "win business",
+      "write Statements of Work",
+      "hire and fire",
+      "post links on slack",
+      "drink beer",
+      "yell loudly for no reason",
+      "eat popcorn",
+      "eat bananas"
+    ],
+    "food": ["popcorn", "bananas", "side salad", "cup of soup", "handful of nuts"],
+    "restaurant": [
+      "thirteen twenty three kitchen",
+      "Billy's on Burnet",
+      "Monkey Nest"
+    ],
+    "place": ["work", "home", "Wisconsin", "Maine"],
+    "friend": ["Sean Ripple"],
+    "family": ["Mom", "Dad", "Jeff", "Jenn"]
   }
 ]
